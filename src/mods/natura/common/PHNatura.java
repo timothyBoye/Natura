@@ -206,7 +206,7 @@ public class PHNatura
         boneBagID = config.getItem("Bonemeal Bag", 12419).getInt(12419);
         netherFood = config.getItem("Nether foodstuffs", 12420).getInt(12420);
         stickItem = config.getItem("Stick", 12421).getInt(12421);
-
+        
         ghostwoodSword = config.getItem("Ghostwood Sword", 12422).getInt(12422);
         ghostwoodPickaxe = config.getItem("Ghostwood Pickaxe", 12423).getInt(12423);
         ghostwoodShovel = config.getItem("Ghostwood Shovel", 12424).getInt(12424);
@@ -256,6 +256,8 @@ public class PHNatura
         
         flintAndBlaze = config.getItem("Flint and Blaze", 12459).getInt(12459);
 
+        berryMuffins = config.getItem("Berry Muffin", 12460).getInt(12460);
+        
         boolean BoP = false;
         try
         {
@@ -382,6 +384,7 @@ public class PHNatura
         config.save();
     }
 
+    public static int berryMuffins;
     /* Prototype fields, used elsewhere */
 
     public static int seaLevel;

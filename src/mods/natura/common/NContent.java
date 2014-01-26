@@ -667,6 +667,10 @@ public class NContent implements IFuelHandler
         GameRegistry.registerItem(bowlEmpty, "natura.emptybowl");
         bowlStew = new BowlStew(PHNatura.bowlStew).setUnlocalizedName("natura.stewbowl");
         GameRegistry.registerItem(bowlStew, "natura.stewbowl");
+        
+        //Item added by Timothy Boye
+		berryMuffins = new BerryMuffins(PHNatura.berryMuffins);
+        
         addRecipes();
     }
 
@@ -926,7 +930,19 @@ public class NContent implements IFuelHandler
         OreDictionary.registerOre("glass", new ItemStack(netherGlass, 1, 1));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Item.glassBottle, 3), "# #", " # ", '#', "glass" ));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Block.daylightSensor), "GGG", "QQQ", "WWW", 'G', "glass", 'Q', Item.netherQuartz, 'W', "slabWood" ));
-    }
+        
+        // Items added by Tim Boye
+        // apple muffin
+     	GameRegistry.addRecipe(new ItemStack(berryMuffins, 3, 0), new Object[] {"WM ", "EA ", "   ",'W', Item.wheat, 'M', Item.bucketMilk, 'E', Item.egg, 'A', Item.appleRed });
+     	// blueberry muffin
+     	GameRegistry.addRecipe(new ItemStack(berryMuffins, 1, 1), new Object[] {"WM ", "EX ", "   ",'W', Item.wheat, 'M', Item.bucketMilk, 'E', Item.egg, 'X', new ItemStack(berryItem, 1, 1) });
+     	// raspberry muffin
+     	GameRegistry.addRecipe(new ItemStack(berryMuffins, 1, 2), new Object[] {"WM ", "EX ", "   ",'W', Item.wheat, 'M', Item.bucketMilk, 'E', Item.egg, 'X', new ItemStack(berryItem, 1, 0) });
+     	// Maloberry muffin
+     	GameRegistry.addRecipe(new ItemStack(berryMuffins, 1, 3), new Object[] {"WM ", "EX ", "   ",'W', Item.wheat, 'M', Item.bucketMilk, 'E', Item.egg, 'X', new ItemStack(berryItem, 1, 3) });
+ 		// Blackberry muffin
+ 		GameRegistry.addRecipe(new ItemStack(berryMuffins, 1, 4), new Object[] {"WM ", "EX ", "   ",'W', Item.wheat, 'M', Item.bucketMilk, 'E', Item.egg, 'X', new ItemStack(berryItem, 1, 2) });
+}
 
     public void addShapedRecipeFirst (List recipeList, ItemStack itemstack, Object... objArray)
     {
@@ -1407,6 +1423,8 @@ public class NContent implements IFuelHandler
         }
     }
 
+    public static Item berryMuffins;
+    
     public static Item spawnEgg;
 
     //Crops

@@ -37,6 +37,12 @@ item.berry.dusk.name=Duskberry
 item.berry.sky.name=Skyberry
 item.berry.sting.name=Stingberry
 
+item.berryMuffin.muffin_apple.name=Apple Muffin
+item.berryMuffin.muffin_raspberry.name=Raspberry Muffin
+item.berryMuffin.muffin_blueberry.name=Blueberry Muffin
+item.berryMuffin.muffin_maloberry.name=Maloberry Muffin
+item.berryMuffin.muffin_blackberry.name=Blackberry Muffin
+
 block.raspberryBush.name=Raspberry Bush
 block.blueberryBush.name=Blueberry Bush
 block.blackberryBush.name=Blackberry Bush
